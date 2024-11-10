@@ -12,6 +12,7 @@
   "description": "",
   "dependencies": {
     "-": "^0.0.1",
+    "@azure/storage-blob": "^12.25.0",
     "@stripe/react-stripe-js": "^2.8.1",
     "@stripe/stripe-js": "^4.8.0",
     "bcrypt": "^5.1.1",
