@@ -95,7 +95,7 @@ app.post(
 // Use the rest of the middleware and routes after the webhook
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://voluble-tartufo-7b3012.netlify.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
@@ -143,8 +143,8 @@ app.post("/create-checkout-session", async (req, res) => {
       })),
       mode: "payment",
       billing_address_collection: "required",
-      success_url: "http://localhost:3000/success",
-      cancel_url: "http://localhost:3000/cancel",
+      success_url: "https://voluble-tartufo-7b3012.netlify.app/success",
+      cancel_url: "https://voluble-tartufo-7b3012.netlify.app/cancel",
       metadata: { userId, courseIds }, 
     });
 
@@ -167,6 +167,6 @@ async function enrollUserInCourse(userId, courseId) {
 }
 
 app.listen(PORT, async () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+  // console.log(`Server ${PORT}`);
   await testConnection();
 });
