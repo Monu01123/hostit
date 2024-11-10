@@ -9,8 +9,8 @@ import {
   getCoursesByInstructor,
 } from "../Controllers/courseController.js";
 import { authenticateToken } from "../middleware/authenticateToken.js"; 
-import { instructorOnly } from "../middleware/InstructorMiddleware.js"; 
-import { adminOnly } from "../middleware/adminMiddleware.js"; 
+import { instructorOnly } from "../middleware/instructorMiddleware.js"; 
+// import { adminOnly } from "../middleware/adminMiddleware.js"; 
 
 const router = express.Router();
 
