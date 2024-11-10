@@ -20,7 +20,7 @@ import uploadRouter from "./routes/uploadRoute.js";
 import { clearCart } from "./Controllers/cartController.js";
 import uploadImageRouter from "./routes/upload.js";
 import search from "./routes/SearchRoute.js";
-import vediotrack from "./routes/vediotrack.js";
+import vediotrack from "./routes/vedioTrack.js";
 import quizzes from "./routes/quizzes.js";
 import quizQuestion from "./routes/quizQuestion.js";
 import quizOption from "./routes/quizOptions.js";
